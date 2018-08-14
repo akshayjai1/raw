@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script type="https://unpkg.com/@webcomponents/webcomponentsjs@next/webcomponents-loader.js"></script>
+	</head>
+	<body>
+		<script type="module">
+			import { LitElement, html } from 'https://unpkg.com/@polymer/lit-element@latest/lit-element.js?module';
+			class CounterComp extends LitElement {
+				constructor() {
+					super();
+				}
+
+				_render() {
+					return html`This is my first tutorial`;
+				}
+			}
+
+			customElements.define('counter-comp', CounterComp)
+		</script>
+		<counter-comp></counter-comp>
+	</body>
+</html>
